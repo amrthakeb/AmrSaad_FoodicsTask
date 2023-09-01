@@ -20,7 +20,7 @@ public HomePage (WebDriver driver)
 
 
     public resultsPage clickSearch(){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Use Duration here        wait.until(ExpectedConditions.elementToBeClickable(searchBtn)).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
         wait.until(ExpectedConditions.elementToBeClickable(searchBtn)).click();
         return new resultsPage(driver); //will be linked by the constructor in resultsPage
     }
