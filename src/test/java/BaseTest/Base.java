@@ -12,8 +12,6 @@ public class Base {
     public void setup() {
         ChromeOptions option = new ChromeOptions();
         option.addArguments("start-maximized");
-        option.addArguments("C:\\Users\\Dell\\AppData\\Local\\Chromium\\User Data\\Default\n");
-        option.addArguments("--profile-directory=Work");
         driver = new ChromeDriver(option);
         driver.get("https://www.google.com");
 
